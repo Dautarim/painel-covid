@@ -14,7 +14,10 @@ body::-webkit-scrollbar
 {
     width: .8rem;
     background: transparent;
+    
 }
+
+
 body::-webkit-scrollbar-thumb
 {
     background: #04152E;
@@ -43,6 +46,40 @@ header .logo-principal a
     color: black;
     font-weight: 700;
     text-shadow: .2rem 0rem red, -.2rem 0rem cyan;
+    animation: error 0.5s linear infinite ;
+}
+
+@keyframes error
+{
+    0%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan; 
+    }
+
+    20%
+    {
+        text-shadow: 0rem -.2rem red, -.2rem 0rem cyan, 0rem .2rem rgb(217, 255, 0); 
+    }
+
+    30%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan, 0rem .2rem rgb(217, 255, 0); 
+    }
+
+    50%
+    {
+        text-shadow: -.2rem 0rem red, .2rem 0rem cyan; 
+    }
+
+    70%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan, 0rem -.2rem rgb(217, 255, 0); 
+    }
+
+    100%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan; 
+    }
 }
 
 header nav
@@ -83,7 +120,65 @@ header .img-box img
 main
 {
     background: rgb(255, 255, 255);
+   
 }
+
+
+
+main .sobre
+{
+    position: fixed;
+    right: 2rem;
+    bottom: 20%;
+
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
+    box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.74) ;
+    background: #04152E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1rem;
+}
+
+main .up
+{
+    position: fixed;
+    right: 2rem;
+    bottom: 13%;
+
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
+    box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.74) ;
+    background: #04152E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .up ion-icon
+{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    
+}
+
+main .sobre p
+{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+}
+
 
 main .s1-togle
 {
@@ -286,4 +381,122 @@ main .s2-fixo .graficos .scrol-graficos .grafico
     margin-block: 1rem;
     border-radius: 1rem;
     color: whitesmoke;
+}
+
+footer
+{
+    background: #04152E;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+footer .equipe-fonte
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: row;
+    
+}
+
+footer .equipe-fonte .fonte
+{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+    padding-block: 4rem;
+    padding-left: 2rem;
+   
+}
+
+footer .equipe-fonte .fonte h5
+{
+    margin-bottom: 2rem;
+}
+
+footer .equipe-fonte .fonte h5 a
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+footer .equipe-fonte .fonte div
+{
+    border-right: 1px solid white;
+}
+
+footer .equipe-fonte .fonte div p
+{
+    font-size: 1.6rem;
+    color: white;
+}
+
+footer .equipe-fonte .equipe
+{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+    padding-block: 4rem;
+    padding-left: 2rem;
+    
+}
+
+footer .equipe-fonte .equipe h5
+{
+    margin-bottom: 2rem;
+}
+
+footer .equipe-fonte .equipe h5 a
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: white;
+   
+}
+
+footer .equipe-fonte .equipe div p
+{
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+
+footer .orgaos
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    
+    padding-bottom: 4rem;
+}
+
+footer .orgaos .img-box-orgao
+{
+    width: 13.5rem;
+    height: 5.5rem;
+    object-fit: cover;
+   
+}
+
+footer .orgaos .img-box-orgao img
+{
+    width: 13.5rem;
+    height: 5.5rem;
+}
+
+footer .orgaos .img-box-orgao img:nth-child(1)
+{
+    width: 14.5rem;
+    height: 4.5rem;
 }
