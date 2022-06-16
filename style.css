@@ -24,6 +24,16 @@ body::-webkit-scrollbar-thumb
     border-radius: .8rem;
 }
 
+body.acarape::-webkit-scrollbar-thumb
+{
+    background: #042e2c;
+}
+
+body.sfconde::-webkit-scrollbar-thumb
+{
+    background: #26042e;
+}
+
 
 header
 {
@@ -87,6 +97,7 @@ header nav
     display: flex;
     justify-content: space-between;
     gap: 2.8rem;
+  
 }
 
 header nav button
@@ -96,11 +107,28 @@ header nav button
     background: transparent;
     font-size: 1.8rem;
     padding: .5rem;
+    transition: .3s;
+    cursor: pointer;
 }
 
-header nav button.selecionado
+header nav button:hover
+{
+    color: #59066b;
+}
+
+header.redencao nav button.selecionado
 {
     border-bottom: .3rem solid #04152E;
+}
+
+header.acarape nav button.selecionado
+{
+    border-bottom: .3rem solid #042e2c;
+}
+
+header.sfconde nav button.selecionado
+{
+    border-bottom: .3rem solid #26042e;
 }
 
 header .img-box
@@ -145,6 +173,16 @@ main .sobre
     margin-bottom: 1rem;
 }
 
+main.acarape .sobre
+{
+    background: #042e2c;
+}
+
+main.sfconde .sobre
+{
+    background: #26042e;
+}
+
 main .up
 {
     position: fixed;
@@ -172,6 +210,16 @@ main .up ion-icon
     
 }
 
+main.acarape .up
+{
+    background: #042e2c;
+}
+
+main.sfconde .up
+{
+    background: #26042e;
+}
+
 main .sobre p
 {
     font-size: 1.8rem;
@@ -191,6 +239,16 @@ main .s1-togle .city-name
     background: #04152E;   
     margin: 10px;
     border-radius: 5px;
+}
+
+main.acarape .s1-togle .city-name
+{
+    background: #042e2c;
+}
+
+main.sfconde .s1-togle .city-name
+{
+    background: #26042e;
 }
 
 main .s1-togle .city-name h3
@@ -244,6 +302,17 @@ main .s1-togle .info-principal .infobox .nome
     padding-block: 1rem;
     padding-inline: 4rem;
 }
+
+main.acarape .s1-togle .info-principal .infobox .nome
+{
+    background: #042e2c;
+}
+
+main.sfconde .s1-togle .info-principal .infobox .nome
+{
+    background: #26042e;
+}
+
 
 main .s1-togle .info-principal .infobox .nome p
 {
@@ -303,6 +372,16 @@ main .s2-fixo .graficos h4
     margin-block: 1.5rem;
 }
 
+main.acarape .s2-fixo .graficos h4
+{
+    border-left: 5px solid #042e2c;
+}
+
+main.sfconde .s2-fixo .graficos h4
+{
+    border-left: 5px solid #26042e;
+}
+
 main .s2-fixo .graficos .scrol-graficos
 {
    
@@ -316,7 +395,7 @@ main .s2-fixo .graficos .scrol-graficos .grafico
 {
     width: 65rem;
     height: 40rem;
-    background: #04152E;
+    background: #2e0421;
     margin-block: 1rem;
     border-radius: 1rem;
     color: whitesmoke;
@@ -341,6 +420,17 @@ main .s2-fixo .mapas h4
     margin-block: 1.5rem;
 }
 
+main.acarape .s2-fixo .mapas h4
+{
+    border-left: 5px solid #042e2c;
+}
+
+main.sfconde .s2-fixo .mapas h4
+{
+    border-left: 5px solid #26042e;
+}
+
+
 main .s2-fixo .mapas .scrol-mapas
 {
     overflow-x: auto;
@@ -361,6 +451,16 @@ main .s2-fixo .mapas .scrol-mapas
     border-radius: 1.5rem;
 }
 
+main.acarape .scrol-mapas::-webkit-scrollbar-thumb
+{
+    background:  #042e2c;
+}
+
+main.sfconde .scrol-mapas::-webkit-scrollbar-thumb
+{
+    background:  #26042e;
+}
+
 .scrol-graficos::-webkit-scrollbar
 {
     background: transparent;
@@ -373,15 +473,17 @@ main .s2-fixo .mapas .scrol-mapas
     border-radius: 1.5rem;
 }
 
-main .s2-fixo .graficos .scrol-graficos .grafico
+main.acarape .scrol-graficos::-webkit-scrollbar-thumb
 {
-    width: 65rem;
-    height: 40rem;
-    background: #04152E;
-    margin-block: 1rem;
-    border-radius: 1rem;
-    color: whitesmoke;
+    background:  #042e2c;
 }
+
+main.sfconde .scrol-graficos::-webkit-scrollbar-thumb
+{
+    background:  #26042e;
+}
+
+
 
 footer
 {
@@ -390,6 +492,16 @@ footer
     align-items: center;
     justify-content: center; 
     flex-direction: column;
+}
+
+footer.acarape 
+{
+    background:  #042e2c;
+}
+
+footer.sfconde 
+{
+    background:  #26042e;
 }
 
 footer .equipe-fonte
