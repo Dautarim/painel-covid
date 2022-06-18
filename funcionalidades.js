@@ -8,6 +8,14 @@ function pracima()
     })
 }
 
+function prabaixo()
+{
+    window.scrollTo
+    ({
+        top:1300,
+        behavior:"smooth"
+    })
+}
 
     let cabecalho = document.getElementById('cabecalho')
     let conteudo = document.getElementById('content')
@@ -23,6 +31,9 @@ function pracima()
 
     function cidadeRedencao()
     {
+        console.log('feito')
+
+        
         corpo.classList.remove('acarape')
         cabecalho.classList.remove('acarape')
         conteudo.classList.remove('acarape')
@@ -41,9 +52,13 @@ function pracima()
         rodape.classList.add('redencao')
         botredenc.classList.add('selecionado')
         
-        document.getElementById('city-name').innerHTML= <h3> REDENÇÃO </h3>
+        document.getElementById('nomedacidade').innerHTML = "REDENÇÃO"
+        document.getElementById('casos-toogle').innerHTML='730mil'
+        document.getElementById('obitos-toogle').innerHTML='23mil'
+        
     }
 
+    
 function cidadeAcarape()
 {
 
@@ -65,7 +80,9 @@ function cidadeAcarape()
     rodape.classList.add('acarape')
     botacar.classList.add('selecionado')
 
-    document.getElementById('city-name').innerHTML= <h3> ACARAPE </h3>
+    document.getElementById('nomedacidade').innerHTML = "ACARAPE"
+    document.getElementById('casos-toogle').innerHTML='900mil'
+    document.getElementById('obitos-toogle').innerHTML='78mil'
 }
 
 function cidadeSfconde()
@@ -89,5 +106,7 @@ function cidadeSfconde()
     rodape.classList.add('sfconde')
     botsfc.classList.add('selecionado')
 
-    document.getElementById('city-name').innerHTML= <h3> SÃO FRANCISCO DO CONDE </h3>
+    document.getElementById('nomedacidade').innerHTML = "SÃO FRANCISCO DO CONDE"
+    document.getElementById('casos-toogle').innerHTML='490mil'
+    document.getElementById('obitos-toogle').innerHTML='34mil'
 }

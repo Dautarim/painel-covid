@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Painel Covid-19</title>
 
 </head>
-<body>
-    <header id="cabecalho">
+<body id="bodyy">
+    <header id="cabecalho" class="redencao">
         <div class="logo-principal">
             <a href="index.html">
                 PAINEL COVID-19
@@ -20,7 +20,7 @@
                 REDENÇÃO
             </button>
 
-            <button onclick="cidadeAcarape()" id="acar">
+            <button onclick="cidadeAcarape()" id="acar" >
                 ACARAPE
             </button>
 
@@ -34,11 +34,11 @@
         </div>
     </header>
 
-<main id="content">
+<main id="content" class="redencao">
      <section class="s1-togle">
 
         <div class="city-name">
-            <h3>
+            <h3 id="nomedacidade">
                 REDENÇÃO
             </h3>
         </div>
@@ -59,7 +59,7 @@
                     <p>CASOS</p>
                 </div>
                 <div  class="numero">
-                    <p>600 mil</p>
+                    <p id="casos-toogle">600 mil</p>
                 </div>
             </div>
             <div class="atulizacao-inf-pr">
@@ -72,7 +72,7 @@
                     <p>OBITOS</p>
                 </div>
                 <div  class="numero">
-                    <p>30 mil</p>
+                    <p id="obitos-toogle">30 mil</p>
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@
         </div>
      </section>
      
-        <div class="sobre">
+        <div class="sobre" onclick="prabaixo()">
             <p>!</p>
         </div>
 
@@ -149,11 +149,11 @@
      
 </main>
 
-<footer id="rodape">
+<footer id="rodape" class="redencao">
     <div class="equipe-fonte">
 
         <div class="fonte">
-            <h5><a href="#">FONTE</a></h5>
+            <h5><a href="sobre.html">FONTE</a></h5>
             <div>
                 <p>
                     Casos e óbitos: Brasil.IO
@@ -168,7 +168,7 @@
         </div>
 
         <div class="equipe">
-            <h5><a href="#">EQUIPE</a></h5>
+            <h5><a href="sobre.html">EQUIPE</a></h5>
 
             <div>
                 <p>

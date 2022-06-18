@@ -27,6 +27,7 @@ body::-webkit-scrollbar-thumb
 body.acarape::-webkit-scrollbar-thumb
 {
     background: #042e2c;
+   
 }
 
 body.sfconde::-webkit-scrollbar-thumb
@@ -118,17 +119,20 @@ header nav button:hover
 
 header.redencao nav button.selecionado
 {
-    border-bottom: .3rem solid #04152E;
+    border-bottom: .4rem solid #04152E;
+    padding: .2rem;
 }
 
 header.acarape nav button.selecionado
 {
-    border-bottom: .3rem solid #042e2c;
+    border-bottom: .4rem solid #042e2c;
+    padding: .2rem;
 }
 
 header.sfconde nav button.selecionado
 {
-    border-bottom: .3rem solid #26042e;
+    border-bottom: .4rem solid #26042e;
+    padding: .2rem;
 }
 
 header .img-box
@@ -171,6 +175,13 @@ main .sobre
     justify-content: center;
 
     margin-bottom: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main .sobre:hover
+{
+    background: #062657;
 }
 
 main.acarape .sobre
@@ -178,9 +189,19 @@ main.acarape .sobre
     background: #042e2c;
 }
 
+main.acarape .sobre:hover
+{
+    background: #085350;
+}
+
 main.sfconde .sobre
 {
     background: #26042e;
+}
+
+main.sfconde .sobre:hover
+{
+    background: #530964;
 }
 
 main .up
@@ -200,6 +221,8 @@ main .up
     align-items: center;
     justify-content: center;
 
+    cursor: pointer;
+    transition: .3s;
 }
 
 main .up ion-icon
@@ -210,14 +233,28 @@ main .up ion-icon
     
 }
 
+main .up:hover
+{
+    background: #0a3370;
+}
+
 main.acarape .up
 {
     background: #042e2c;
 }
 
+main.acarape .up:hover
+{
+    background: #085350;
+}
+
 main.sfconde .up
 {
     background: #26042e;
+}
+main.sfconde .up:hover
+{
+    background: #530964;
 }
 
 main .sobre p
