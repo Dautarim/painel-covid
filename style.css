@@ -149,6 +149,11 @@ header .img-box img
     height: 4.5rem;
 }
 
+header nav .botao-menu
+{
+    display: none;
+}
+
 main
 {
     background: rgb(255, 255, 255);
@@ -303,6 +308,7 @@ main .s1-togle .atualisacao-box
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -318,9 +324,13 @@ main .s1-togle .info-principal
     display: flex;
     align-items: center;
     justify-content: space-around;
+   
+    
     gap: 2rem;
-    overflow-x: auto;
     position: relative;
+
+    margin-block: 2rem;
+
 }
 
 main .s1-togle .info-principal .infobox
@@ -330,6 +340,16 @@ main .s1-togle .info-principal .infobox
     width: 35rem;
     height: 15rem;
     margin-block: 3.4rem;
+}
+
+main .s1-togle .info-principal .infobox:nth-child(1)
+{
+    margin-left: 2rem;
+}
+
+main .s1-togle .info-principal .infobox:nth-child(3)
+{
+    margin-right: 2rem;
 }
 
 main .s1-togle .info-principal .infobox .nome
@@ -626,6 +646,8 @@ footer .orgaos
     display: flex;
     align-items: center;
     justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 2rem;
     
     padding-bottom: 4rem;
 }
@@ -648,4 +670,179 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 {
     width: 14.5rem;
     height: 4.5rem;
+}
+
+/*  RESPONSIVIDADE*/
+
+@media(max-width: 700px)
+{
+  body
+  {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  header
+  {
+    padding-block: 2.4rem;
+    padding-inline: 1rem;
+  }
+
+  header nav 
+  {
+    transform: translateX(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: white;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+
+    transition: .4s ease;
+  }
+
+  
+
+  header nav .botao-menu
+  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    position: fixed;
+    top: 2rem;
+    left: -7rem;
+    width: 5rem;
+    height: 4rem;
+
+  }
+
+  header nav .botao-menu span
+  {
+    background: rgb(0, 0, 0);
+
+    width: 3.5rem;
+    height: .7rem;
+    
+    border-radius: 10rem;
+    transition: .4s ease;
+  }
+
+  header .img-box
+  {
+    display: none;
+  }
+
+  body.entra
+  {
+    overflow: hidden;
+  }
+
+  header nav.entra
+  {
+    transform: translateX(0%);
+  } 
+
+  header nav .botao-menu.entra
+  {
+    left: 2rem;
+  }
+
+  header nav .botao-menu.entra span:nth-child(1)
+  {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+  }
+
+  header nav .botao-menu.entra span:nth-child(3)
+  {
+    transform: rotate(-45deg) translateY(2px) translateX(-7px);
+    transform-origin: top left;
+    width: 48px;
+    box-shadow: 0 0 5px #f0f0f0;
+  }
+
+  header nav .botao-menu.entra span:nth-child(2)
+  {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  header .logo-principal a 
+  {
+    font-size: 2.4rem;
+  }
+
+  main .s1-togle .city-name 
+    {
+    background: #04152E;
+    margin: 0px;
+    border-radius: 0px;
+    }
+
+    main .s1-togle .atualisacao-box 
+    {
+        gap: 2rem;
+    }
+
+    main .s1-togle .info-principal 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        position: relative;
+        flex-direction: column;
+        margin-block: 2rem;
+    }
+
+    main .s1-togle .info-principal .infobox {
+        border-radius: 2rem;
+        background: grey;
+        width: 25rem;
+        height: 15rem;
+        margin-block: 3.4rem;
+    }
+
+    main .s1-togle .info-principal .infobox .nome p {
+        font-size: 2rem;
+        color: white;
+    }
+
+    main .s1-togle .info-principal .atulizacao-inf-pr {
+        position: absolute;
+        transform: translateY(10%);
+        background: #FF0099;
+        border-radius: 1rem;
+        
+    }
+
+    main .s1-togle .info-principal .atulizacao-inf-pr p {
+        font-size: 1.5rem;
+        padding-block: 1rem;
+        padding-inline: 1.5rem;
+        color: white;
+    }
+
+    main .s1-togle .info-principal .infobox:nth-child(1) {
+        margin-left: 0rem;
+    }
+
+    main .s1-togle .info-principal .infobox:nth-child(3) {
+        margin-right: 0rem;
+    }
+
+    footer .equipe-fonte {
+        
+        flex-wrap: wrap;
+    }
 }

@@ -1,3 +1,25 @@
+let cabecalho = document.getElementById('cabecalho')
+let conteudo = document.getElementById('content')
+let rodape = document.getElementById('rodape')
+
+let botredenc = document.getElementById('redenc')
+let botacar = document.getElementById('acar')
+let botsfc = document.getElementById('sfc')
+
+let corpo = document.getElementById('bodyy')
+
+let menuu = document.getElementById("botao-menu")
+
+let menucidades = document.getElementById('nave')
+
+function AbreFechaMenu()
+{
+    corpo.classList.toggle('entra')
+
+    menuu.classList.toggle('entra')
+
+    menucidades.classList.toggle('entra')
+}
 
 function pracima()
 {
@@ -17,15 +39,7 @@ function prabaixo()
     })
 }
 
-    let cabecalho = document.getElementById('cabecalho')
-    let conteudo = document.getElementById('content')
-    let rodape = document.getElementById('rodape')
-
-    let botredenc = document.getElementById('redenc')
-    let botacar = document.getElementById('acar')
-    let botsfc = document.getElementById('sfc')
-
-    let corpo = document.getElementById('bodyy')
+  
     
 
 
