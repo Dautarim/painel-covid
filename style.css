@@ -10,11 +10,11 @@
     font-size: 62.5%;
 }
 
+
+
 body::-webkit-scrollbar
 {
-    width: .8rem;
-    background: transparent;
-    
+    width: .8rem; 
 }
 
 
@@ -48,6 +48,7 @@ header
     background: white;
     z-index: 10;
     box-shadow: 0rem .5rem .5rem rgba(73, 73, 73, 0.568);
+    
 }
 
 header .logo-principal a
@@ -175,13 +176,27 @@ main .sobre
     border-radius: 50%;
     box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.74) ;
     background: #04152E;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 
     margin-bottom: 1rem;
     cursor: pointer;
     transition: .3s;
+}
+
+
+
+main .sobre p
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10% ,-50%);
+
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
 }
 
 main .sobre:hover
@@ -215,7 +230,7 @@ main .up
     right: 2rem;
     bottom: 13%;
 
-
+    display: none;
     width: 4rem;
     height: 4rem;
 
@@ -227,7 +242,7 @@ main .up
     justify-content: center;
 
     cursor: pointer;
-    transition: .3s;
+    transition: all .4s;
 }
 
 main .up ion-icon
@@ -262,12 +277,6 @@ main.sfconde .up:hover
     background: #530964;
 }
 
-main .sobre p
-{
-    font-size: 1.8rem;
-    color: white;
-    font-weight: 700;
-}
 
 
 main .s1-togle
@@ -317,6 +326,7 @@ main .s1-togle .atualisacao-box p
 {
     font-size: 2.4rem;
     color: white;
+    
 }
 
 main .s1-togle .info-principal
@@ -330,6 +340,7 @@ main .s1-togle .info-principal
     position: relative;
 
     margin-block: 2rem;
+    visibility: hidden;
 
 }
 
@@ -710,6 +721,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 
   header nav .botao-menu
   {
+    cursor: pointer;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -765,7 +777,8 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 
   header nav .botao-menu.entra span:nth-child(3)
   {
-    transform: rotate(-45deg) translateY(2px) translateX(-7px);
+    transform: rotate(-45deg) translateY(1px) translateX(-9px);
+
     transform-origin: top left;
     width: 48px;
     box-shadow: 0 0 5px #f0f0f0;

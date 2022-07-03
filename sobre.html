@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel Covid-19</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+    <header id="cabecalho" class="redencao">
+        <div class="logo-principal">
+            <a href="index.html">
+                PAINEL COVID-19
+            </a>
+        </div>
+        <nav id="nave">
+
+            <button class="selecionado" onclick="cidadeRedencao()" id="redenc">
+                EQUIPE
+            </button>
+
+            <button onclick="cidadeAcarape()" id="acar" >
+                SOBRE
+            </button>
+
+            <button onclick="cidadeSfconde()" id="sfc">
+                INSTITUIÇÕES
+            </button>
+
+            <div class="botao-menu" id="botao-menu" onclick="AbreFechaMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="img-box">
+            <img src="imgs/logo-unilab.png" alt="logo-unilab">
+        </div>
+    </header>
+
+    <main>
+        <section class="aequipe">
+
+            <div class="passarela">
+
+                <div class="card">
+                    <div class="card-image"></div>
+                      <div class="card-description">
+                        <p class="text-title"> Card Title</p>
+                        <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                      </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-image"></div>
+                          <div class="card-description">
+                            <p class="text-title"> Card Title</p>
+                            <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-image"></div>
+                              <div class="card-description">
+                                <p class="text-title"> Card Title</p>
+                                <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                              </div>
+                            </div>
+
+
+            </div>
+        </section>
+
+        <section class="sobreoprojeto">
+            <div class="falatorios">
+                <div class="textof">
+                    <h2>SOBRE O PROJETO</h2>
+                    <p>
+                        Este site foi produzido no âmbito do projeto de extensão referente ao Edital PROEX 03/2020 - Programa de Bolsas de Extensão temático voltado ao enfrentamento à COVID-19. O projeto em questão trata da análise da evolução do novo Coronavírus (Covid-19) nos municípios de Redenção (CE), Acarape (CE) e São Francisco Do Conde (BA), cidades que sediam campi da Unilab.
+                    </p>
+                </div>
+                <div class="imagemdaunilab">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+
+            <div class="asfontes">
+
+            </div>
+
+        </section>
+
+       <footer>
+
+       </footer>
+    </main>
     <a href="index.html">VOLTAR</a>
     em obras
 </body>

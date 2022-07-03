@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: white;
+}
+
+body
+{
+    background: #333;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    border-bottom: .1rem solid rgb(131, 131, 131) ;
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 10;
+    box-shadow: 0rem .5rem .5rem rgba(73, 73, 73, 0.568);
+    
+}
+
+header .logo-principal a
+{
+    font-size: 3.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-shadow: .2rem 0rem red, -.2rem 0rem cyan;
+    animation: error 0.5s linear infinite ;
+}
+
+@keyframes error
+{
+    0%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan; 
+    }
+
+    20%
+    {
+        text-shadow: 0rem -.2rem red, -.2rem 0rem cyan, 0rem .2rem rgb(217, 255, 0); 
+    }
+
+    30%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan, 0rem .2rem rgb(217, 255, 0); 
+    }
+
+    50%
+    {
+        text-shadow: -.2rem 0rem red, .2rem 0rem cyan; 
+    }
+
+    70%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan, 0rem -.2rem rgb(217, 255, 0); 
+    }
+
+    100%
+    {
+        text-shadow: .2rem 0rem red, -.2rem 0rem cyan; 
+    }
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.8rem;
+  
+}
+
+header nav button
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.8rem;
+    padding: .5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header nav button:hover
+{
+    color: #59066b;
+}
+
+header.redencao nav button.selecionado
+{
+    border-bottom: .4rem solid #04152E;
+    padding: .2rem;
+}
+
+header.acarape nav button.selecionado
+{
+    border-bottom: .4rem solid #042e2c;
+    padding: .2rem;
+}
+
+header.sfconde nav button.selecionado
+{
+    border-bottom: .4rem solid #26042e;
+    padding: .2rem;
+}
+
+header .img-box
+{
+    width: 15rem;
+    height: 5rem;
+    background: transparent;
+    object-fit: cover;
+}
+
+header .img-box img
+{
+    width: 14.5rem;
+    height: 4.5rem;
+}
+
+header nav .botao-menu
+{
+    display: none;
+}
+
+body .aequipe
+{
+    margin-bottom: 5rem;
+}
+
+
+
+.passarela
+{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+
+.card {
+    
+    height: 30.4rem;
+    width: 25rem;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1rem;
+    overflow: hidden;
+   
+   }
+   
+    /*Image*/
+   .card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #0a3394 url("https://painelcovid19.github.io/images/profTales.jpeg");
+    background-position: center center;
+    background-size: cover;
+   
+   }
+   
+   /*Description */
+   .card-description {
+
+   
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 80%;
+    transform: translateY(60%);
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+   }
+   
+   /*Text*/
+   .text-title {
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 700;
+   }
+   
+   .text-body {
+    color: black;
+    font-size: 1rem;
+    line-height: 150%;
+   }
+   
+   
+   /* Hover states */
+   
+   .card:hover .card-description {
+    transform: translateY(0%);
+   }
+   

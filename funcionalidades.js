@@ -30,20 +30,13 @@ function pracima()
     })
 }
 
-function prabaixo()
-{
-    window.scrollTo
-    ({
-        top:1300,
-        behavior:"smooth"
-    })
-}
+
 
   
-    
 
 
-    function cidadeRedencao()
+
+function cidadeRedencao()
     {
         console.log('feito')
 
@@ -124,3 +117,65 @@ function cidadeSfconde()
     document.getElementById('casos-toogle').innerHTML='490mil'
     document.getElementById('obitos-toogle').innerHTML='34mil'
 }
+
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.info-principal', {
+    origin:'top',
+    distance: '50px',
+    duration: 1600})
+
+sr.reveal('.graficos', {
+    delay:400,
+    origin:'bottom',
+    distance: '30px',
+    duration: 1000})
+
+sr.reveal('.mapas', {
+    delay:100,
+    origin:'bottom',
+    distance: '50px',
+    duration: 1000})
+
+sr.reveal('.fonte', {
+    origin:'bottom',
+    distance: '30px',
+    duration: 1000})
+
+sr.reveal('.equipe', {
+    delay:300,
+    origin:'bottom',
+    distance: '30px',
+    duration: 1000})
+
+sr.reveal('.orgaos', {
+    delay:600,
+    origin:'left',
+    distance: '30px',
+    duration: 1000})
+
+sr.reveal('.up', {
+        reset:true,
+        delay:400,
+        origin:'right',
+        distance: '30px',
+        duration: 1000})
+
+
+function scrollvf()
+{
+    let botcima = document.querySelector('.up')
+
+    if(window.scrollY == 0)
+    {
+        botcima.style.display = 'none'
+    }
+    else
+    {
+        botcima.style.display = 'flex'
+    }
+}
+
+addEventListener('scroll',scrollvf)
+
