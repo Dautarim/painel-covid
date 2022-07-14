@@ -157,8 +157,7 @@ header nav .botao-menu
 
 main
 {
-    background: rgb(255, 255, 255);
-   
+    background: rgb(255, 255, 255);  
 }
 
 
@@ -183,6 +182,8 @@ main .sobre
     margin-bottom: 1rem;
     cursor: pointer;
     transition: .3s;
+
+    z-index: 9999;
 }
 
 
@@ -243,6 +244,8 @@ main .up
 
     cursor: pointer;
     transition: all .4s;
+
+    z-index: 9999;
 }
 
 main .up ion-icon

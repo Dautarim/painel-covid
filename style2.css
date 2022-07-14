@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
+/* 
+<div class="card">
+                    <div class="card-image"></div>
+                      <div class="card-description">
+                        <p class="text-title"> Card Title</p>
+                        <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                      </div>
+                    </div>
+                    */
+
 
 *
 {
@@ -8,12 +18,12 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 body
 {
-    background: #333;
+    background: rgb(255, 255, 255);
 }
 
 header
@@ -25,7 +35,7 @@ header
     border-bottom: .1rem solid rgb(131, 131, 131) ;
     position: sticky;
     top: 0;
-    background: #333;
+    background: rgb(228, 228, 228);
     z-index: 10;
     box-shadow: 0rem .5rem .5rem rgba(73, 73, 73, 0.568);
     
@@ -135,34 +145,37 @@ header nav .botao-menu
     display: none;
 }
 
-body .aequipe
+
+.container
 {
-    margin-bottom: 5rem;
+    width: 100%;
+    padding: 2rem;
 }
 
-
+.passarelascroll
+{
+   overflow-x: auto; 
+}
 
 .passarela
 {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 3rem;
-    overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   gap: 2rem;
+ 
 }
 
 
-.card {
+
+
+.card 
+    {
     
-    height: 30.4rem;
-    width: 25rem;
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    border-radius: 1rem;
-    overflow: hidden;
-   
+    height: 30rem;
+    width: 30rem;
+    background-color: black;
+    cursor: pointer;
    }
    
     /*Image*/
@@ -180,7 +193,6 @@ body .aequipe
    /*Description */
    .card-description {
 
-   
     display: flex;
     position: absolute;
     gap: 1em;
@@ -193,6 +205,7 @@ body .aequipe
     border-radius: 1em 1em 0 0;
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 1rem;
+
    }
    
    /*Text*/
@@ -214,4 +227,201 @@ body .aequipe
    .card:hover .card-description {
     transform: translateY(0%);
    }
+
+  
+
+   .sobreoprojeto
+   {
+    width: 100%;
+    padding: 2rem;
+   }
    
+   .falatorios
+   {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+   }
+   .textof 
+   {
+    width: 60%;
+   }
+   .textof h2
+   {
+    
+    font-size: 3.2rem;
+   }
+
+   .textof p
+   {
+    
+    font-size: 2rem;
+   }
+
+  .imagemdaunilab
+  {
+    width: 50rem;
+  }
+
+  .imagemdaunilab img
+  {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .asfontes
+  {
+    margin-top: 5rem;
+  }
+  .asfontes h3
+  {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .asfontes .linkfontes
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+
+  .asfontes .linkfontes a
+  {
+    font-size: 2.4rem;
+    text-decoration: none;
+    padding: 1rem;
+    transition: ease .3s;
+    position: relative;
+    z-index: 1;
+  }
+
+  .asfontes .linkfontes a::before
+  {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: black;
+    width: 100%;
+    height: .2rem;
+    z-index: -1;
+
+    transition: ease .3s;
+  }
+
+  .asfontes .linkfontes a:hover
+  {
+    color: white;
+  }
+
+  .asfontes .linkfontes a:hover::before 
+  {
+    height: 100%;
+  }
+
+
+
+  footer 
+  {
+    padding-block: 3rem;
+    background-color: #04152E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+   
+  }
+
+  footer a
+  {
+    display: block;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: .4s;
+  }
+
+  footer a ion-icon
+  {
+    transform: translateY(.2rem);
+    color: #f5f5f5;
+    font-size: 2.4rem;
+    margin-right: .5rem;
+    transition: .4s;
+  }
+
+  footer a:hover
+  {
+    color: #808080;
+  }
+
+  footer a:hover ion-icon
+  {
+    animation: shake .7s linear infinite;
+    animation-delay: .3s;
+    transition: all .4s;
+  }
+
+  @keyframes shake
+  {
+    0%
+    {
+        
+        transform: translateX(0rem) translateY(.2rem);
+        
+    }
+
+    50%
+    {
+        transform: translateX(-.2rem) translateY(.2rem);
+       
+    }
+
+    100%
+    {
+        transform: translateX(0rem) translateY(.2rem);
+       
+    }
+  }
+
+  footer .orgaos
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+footer .orgaos .img-box-orgao
+{
+    width: 13.5rem;
+    height: 5.5rem;
+    object-fit: cover;
+   
+}
+
+footer .orgaos .img-box-orgao img
+{
+    width: 13.5rem;
+    height: 5.5rem;
+}
+
+footer .orgaos .img-box-orgao img:nth-child(1)
+{
+    width: 14.5rem;
+    height: 4.5rem;
+}
