@@ -399,15 +399,21 @@ header nav .botao-menu
     object-fit: cover;
   }
 
+
+
   .asfontes
   {
     margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
   }
+
   .asfontes h3
   {
     font-size: 3.2rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin: auto;
   }
 
   .asfontes .linkfontes
@@ -569,4 +575,23 @@ footer .orgaos .img-box-orgao a
 footer .orgaos .img-box-orgao a:hover
 {
   background: #042e2c48;
+}
+
+/*Responsividade*/
+
+@media(max-width: 700px)
+{
+  header nav {
+    display: none;
+  }
+
+  header .img-box
+  {
+    display: none;
+  }
+
+  .asfontes .linkfontes 
+  {
+    flex-direction: column;
+  }
 }
