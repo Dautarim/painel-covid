@@ -179,6 +179,8 @@ function scrollvf()
 
 addEventListener('scroll',scrollvf)
 
+/*scroll do grafico*/
+
 document.querySelectorAll('.grafico').forEach
 (item => {
     item.addEventListener('click', (e) => {

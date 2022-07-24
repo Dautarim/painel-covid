@@ -21,6 +21,11 @@
     color: rgb(0, 0, 0);
 }
 
+html
+{
+  scroll-behavior: smooth;
+}
+
 body
 {
     background: rgb(255, 255, 255);
@@ -94,6 +99,7 @@ header nav
 
 header nav button
 {
+    position: relative;
     border: none;
     outline: none;
     background: transparent;
@@ -101,6 +107,16 @@ header nav button
     padding: .5rem;
     transition: .3s;
     cursor: pointer;
+}
+
+header nav button a
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #04152e00;
 }
 
 header nav button:hover
@@ -175,8 +191,8 @@ header nav .botao-menu
    
  /* From uiverse.io by @alexruix */
 .card {
-  width: 20rem;
-  height: 30rem;
+  width: 25rem;
+  height: 35rem;
   border-radius: 1em;
   
   background: #bbccf1 ;
@@ -204,13 +220,55 @@ header nav .botao-menu
   transition: 0.5s;
   border-radius: 1rem;
  }
+
+ .card.n1:before
+ {
+  background: #0a3394 url("https://painelcovid19.github.io/images/prof-Sabi.jpg");
+  background-size: cover;
+  background-position: center center;
+ }
+
+ .card.n2:before
+ {
+  background: #0a3394 url("https://painelcovid19.github.io/images/Gildo5.jpg");
+  background-size: cover;
+  background-position: bottom center;
+ }
+
+ .card.n3:before
+ {
+  background: #0a3394 url("https://painelcovid19.github.io/images/Edilson.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+ }
+
+ .card.n4:before
+ {
+  background: #0a3394 url("https://painelcovid19.github.io/images/jose.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+ }
+
+ .card.n5:before
+ {
+  background: #0a3394 url("https://dautarim.github.io/meu-contato/imagens/profile-pic%20(1).png");
+  background-size: cover;
+  background-position: center center;
+ }
+
+ .card.n6:before
+ {
+  background: #0a3394 url("https://sig.unilab.edu.br/shared/verFoto?idFoto=735160&key=2edd9b06778dd3d1d38114def020ed75");
+  background-size: cover;
+  background-position: center center;
+ }
  
  .card-info {
   position: relative;
   z-index: 3;
   color: #f5f5f5;
   opacity: 1;
-  transform: translateY(67%);
+  transform: translateY(70%);
   transition: all 0.5s;
   width: 100%;
   height: 100%;
@@ -223,6 +281,13 @@ header nav .botao-menu
   flex-direction: column;
   text-align: center;
  }
+
+ .card.n5 .card-info, .card.n4 .card-info
+{
+  transform: translateY(74%);
+
+}
+
 
  .card-info p
  {
@@ -240,9 +305,12 @@ header nav .botao-menu
  .text-title {
   font-size: 2rem;
   font-weight: 600;
- 
  }
  
+ .card.n5 .text-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+ }
  .text-body {
   letter-spacing: .1rem;
   font-size: 1.3rem;
@@ -468,6 +536,7 @@ header nav .botao-menu
 
 footer .orgaos .img-box-orgao
 {
+    position: relative;
     width: 13.5rem;
     height: 5.5rem;
     object-fit: cover;
@@ -484,4 +553,20 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 {
     width: 14.5rem;
     height: 4.5rem;
+}
+
+footer .orgaos .img-box-orgao a
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #042e2c00;
+  transition: .4s;
+}
+
+footer .orgaos .img-box-orgao a:hover
+{
+  background: #042e2c48;
 }
