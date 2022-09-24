@@ -317,13 +317,23 @@ main .s1-togle .city-name h3
 
 main .s1-togle .atualisacao-box
 {
-    background: #006328;
+    background: #062046;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
+main.acarape .s1-togle .atualisacao-box
+{
+    background: #006328;
+}
+
+
+main.sfconde .s1-togle .atualisacao-box
+{
+    background: #470955;
+}
 
 
 main .s1-togle .atualisacao-box p
@@ -355,6 +365,7 @@ main .s1-togle .info-principal .infobox
     width: 35rem;
     height: 15rem;
     margin-block: 3.4rem;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.158) ;
 }
 
 main .s1-togle .info-principal .infobox:nth-child(1)
@@ -409,10 +420,26 @@ main .s1-togle .info-principal .atulizacao-inf-pr
 {
     position: absolute;
     transform: translateY(120%);
-    background: #FF0099;
+    background: #04152E;
     border-radius: 1rem;
-    box-shadow: 0rem -1rem .8rem rgba(0, 0, 0, 0.199);
+    box-shadow: 0 -20px 32px rgba(0, 0, 0, 0.336);
 }
+
+main.acarape .s1-togle .info-principal .atulizacao-inf-pr
+{
+    background: #042e2c;
+}
+
+main.acarape .s1-togle .info-principal .atulizacao-inf-pr
+{
+    background: #042e2c;
+}
+
+main.sfconde .s1-togle .info-principal .atulizacao-inf-pr
+{
+    background: #26042e;
+}
+
 
 main .s1-togle .info-principal .atulizacao-inf-pr p
 {

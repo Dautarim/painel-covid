@@ -63,6 +63,7 @@ function cidadeRedencao()
         document.getElementById('casos-toogle').innerHTML='730mil'
         document.getElementById('obitos-toogle').innerHTML='23mil'
         
+        AbreFechaMenu()
     }
 
     
@@ -90,6 +91,8 @@ function cidadeAcarape()
     document.getElementById('nomedacidade').innerHTML = "ACARAPE"
     document.getElementById('casos-toogle').innerHTML='900mil'
     document.getElementById('obitos-toogle').innerHTML='78mil'
+
+    AbreFechaMenu()
 }
 
 function cidadeSfconde()
@@ -116,6 +119,8 @@ function cidadeSfconde()
     document.getElementById('nomedacidade').innerHTML = "SÃO FRANCISCO DO CONDE"
     document.getElementById('casos-toogle').innerHTML='490mil'
     document.getElementById('obitos-toogle').innerHTML='34mil'
+
+    AbreFechaMenu()
 }
 
 
