@@ -726,7 +726,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 
   header
   {
-    padding-block: 2.4rem;
+    padding-block: 2rem;
     padding-inline: 1rem;
   }
 
@@ -823,9 +823,14 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     opacity: 0;
   }
 
+  header 
+  {
+  
+  }
+
   header .logo-principal a 
   {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   main .s1-togle .city-name 
