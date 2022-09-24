@@ -757,7 +757,8 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5px;
 
 
     position: fixed;
@@ -772,8 +773,8 @@ footer .orgaos .img-box-orgao img:nth-child(1)
   {
     background: rgb(0, 0, 0);
 
-    width: 3.5rem;
-    height: .7rem;
+    width: 2.5rem;
+    height: .5rem;
     
     border-radius: 10rem;
     transition: .4s ease;
@@ -787,6 +788,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
   body.entra
   {
     overflow: hidden;
+    height: 100vh;
   }
 
   header nav.entra
@@ -801,19 +803,13 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 
   header nav .botao-menu.entra span:nth-child(1)
   {
-    transform: rotate(45deg);
-    transform-origin: top left;
-    width: 48px;
+    transform: rotate(45deg) translate(5px , 9px);
     left: 5px;
   }
 
   header nav .botao-menu.entra span:nth-child(3)
   {
-    transform: rotate(-45deg) translateY(1px) translateX(-9px);
-
-    transform-origin: top left;
-    width: 48px;
-    box-shadow: 0 0 5px #f0f0f0;
+    transform: rotate(-45deg) translate(5px ,-9px);
   }
 
   header nav .botao-menu.entra span:nth-child(2)
