@@ -111,7 +111,7 @@ header nav button
     padding: .5rem;
     transition: .3s;
     cursor: pointer;
-    letter-spacing: 4px;
+    
 }
 
 header nav button:hover
@@ -749,7 +749,12 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     transition: .4s ease;
   }
 
-  
+  header nav button
+  {
+    letter-spacing: 4px;
+  }
+
+ 
 
   header nav .botao-menu
   {
@@ -830,9 +835,21 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     border-radius: 0px;
     }
 
+    main .s1-togle .city-name h3 
+    {
+        font-size: 2rem;
+    }
+
+
     main .s1-togle .atualisacao-box 
     {
-        gap: 2rem;
+        padding-block: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    main .s1-togle .atualisacao-box p 
+    {
+        font-size: 1.6rem;
     }
 
     main .s1-togle .info-principal 
@@ -856,7 +873,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     }
 
     main .s1-togle .info-principal .infobox .nome p {
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: white;
     }
 
@@ -869,7 +886,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     }
 
     main .s1-togle .info-principal .atulizacao-inf-pr p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         padding-block: 1rem;
         padding-inline: 1.5rem;
         color: white;
