@@ -111,6 +111,7 @@ header nav button
     padding: .5rem;
     transition: .3s;
     cursor: pointer;
+    letter-spacing: 4px;
 }
 
 header nav button:hover
@@ -714,7 +715,8 @@ footer .orgaos .img-box-orgao img:nth-child(1)
 
     background: white;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     z-index: 1;
 
     transition: .4s ease;
