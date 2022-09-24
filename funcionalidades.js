@@ -123,50 +123,63 @@ function cidadeSfconde()
     AbreFechaMenu()
 }
 
+let larguradatela = corpo.offsetWidth
 
-window.sr = ScrollReveal({ reset: true });
+  window.addEventListener('load', () => {
+    if(larguradatela > 700)
+        {
 
-sr.reveal('.info-principal', {
-    origin:'top',
-    distance: '50px',
-    duration: 1600})
+           
 
-sr.reveal('.graficos', {
-    delay:400,
-    origin:'bottom',
-    distance: '30px',
-    duration: 1000})
+                window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('.mapas', {
-    delay:100,
-    origin:'bottom',
-    distance: '50px',
-    duration: 1000})
+                sr.reveal('.info-principal', {
+                    origin:'top',
+                    distance: '50px',
+                    duration: 1600})
 
-sr.reveal('.fonte', {
-    origin:'bottom',
-    distance: '30px',
-    duration: 1000})
+                sr.reveal('.graficos', {
+                    delay:400,
+                    origin:'bottom',
+                    distance: '30px',
+                    duration: 1000})
 
-sr.reveal('.equipe', {
-    delay:300,
-    origin:'bottom',
-    distance: '30px',
-    duration: 1000})
+                sr.reveal('.mapas', {
+                    delay:100,
+                    origin:'bottom',
+                    distance: '50px',
+                    duration: 1000})
 
-sr.reveal('.orgaos', {
-    delay:600,
-    origin:'left',
-    distance: '30px',
-    duration: 1000})
+                sr.reveal('.fonte', {
+                    origin:'bottom',
+                    distance: '30px',
+                    duration: 1000})
 
-sr.reveal('.up', {
-        reset:true,
-        delay:400,
-        origin:'right',
-        distance: '30px',
-        duration: 1000})
+                sr.reveal('.equipe', {
+                    delay:300,
+                    origin:'bottom',
+                    distance: '30px',
+                    duration: 1000})
 
+                sr.reveal('.orgaos', {
+                    delay:600,
+                    origin:'left',
+                    distance: '30px',
+                    duration: 1000})
+
+                sr.reveal('.up', {
+                        reset:true,
+                        delay:400,
+                        origin:'right',
+                        distance: '30px',
+                        duration: 1000})
+
+        }
+    else
+    {
+        console.log('scrol reveal parado '+ larguradatela)   
+    }
+  }) 
 
 function scrollvf()
 {

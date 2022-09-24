@@ -721,7 +721,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
   body
   {
     position: relative;
-    overflow-x: hidden;
+    overflow-x:hidden;
   }
 
   header
@@ -745,7 +745,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
     justify-content: center;
     gap: 40px;
     z-index: 1;
-
+    
     transition: .4s ease;
   }
 
@@ -844,6 +844,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
         position: relative;
         flex-direction: column;
         margin-block: 2rem;
+        visibility: visible;
     }
 
     main .s1-togle .info-principal .infobox {
