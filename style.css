@@ -721,6 +721,7 @@ footer .orgaos .img-box-orgao img:nth-child(1)
   body
   {
     position: relative;
+    width: 100vw;
     overflow-x:hidden;
   }
 
@@ -793,12 +794,13 @@ footer .orgaos .img-box-orgao img:nth-child(1)
   body.entra
   {
     overflow: hidden;
-    height: 100vh;
   }
 
   header nav.entra
   {
     transform: translateX(0%);
+    height: 100vh;
+    overflow: hidden;
   } 
 
   header nav .botao-menu.entra
